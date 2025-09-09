@@ -112,9 +112,6 @@ console.log('A')
 // calculoGauss(10)
 // .then(res => console.log(`Resultado: ${res}`))
 // .catch(erro => console.log(erro))
-// const axios = require("axios");
-// const appid = "21614a7688c847cfe006248d07e82b59"
-
 
 // Async await -> Criado em 2017
 // async function hello(nome){
@@ -124,16 +121,16 @@ console.log('A')
 // const res = hello('Ana')
 // res.then ( r => console.log(r))
 
-const fatorial = (n) => {
-    if(n < 0)
-        return Promise.reject("Negativo não")
-    if(n===1)
-        return Promise.resolve(1)
-    let ac = 1
-    for(let i=2; i<=n; i++) 
-        ac *= i
-    return Promise.resolve(ac)
-}
+// const fatorial = (n) => {
+//     if(n < 0)
+//         return Promise.reject("Negativo não")
+//     if(n===1)
+//         return Promise.resolve(1)
+//     let ac = 1
+//     for(let i=2; i<=n; i++) 
+//         ac *= i
+//     return Promise.resolve(ac)
+// }
 
 // function chamadaComThenECatch()
 // {
@@ -150,24 +147,27 @@ const fatorial = (n) => {
 // chamadaComThenECatch()
 
 //async function chamadaComAsyncAwait(){}
-const chamadaComAsyncAwait = async () => {
-    const n1 = 10
-    const n2 = -1
-    try{
-        const res1 = await fatorial(n1)
-        console.log(`Resultado:${res1}`)
-    }
-    catch(err){
-        console.log(`Erro: ${err}`)
-    }
-    try{
-        const res2 = await fatorial(n2)
-        console.log(`Resultado: ${res2}`)
-    }
-    catch(err){
-        console.log(`Erro: ${err}`)
-    }
-}
+// const chamadaComAsyncAwait = async () => {
+//     const n1 = 10
+//     const n2 = -1
+//     try{
+//         const res1 = await fatorial(n1)
+//         console.log(`Resultado:${res1}`)
+//     }
+//     catch(err){
+//         console.log(`Erro: ${err}`)
+//     }
+//     try{
+//         const res2 = await fatorial(n2)
+//         console.log(`Resultado: ${res2}`)
+//     }
+//     catch(err){
+//         console.log(`Erro: ${err}`)
+//     }
+// }
 
-chamadaComAsyncAwait()
+// chamadaComAsyncAwait()
 
+//OpenWeatherMap
+const axios = require("axios");
+const appid = "21614a7688c847cfe006248d07e82b59"
